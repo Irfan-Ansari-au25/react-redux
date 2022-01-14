@@ -1,13 +1,16 @@
-import "./App.css";
-import { Provider } from "react-redux";
-import CakeContainer from "./components/CakeContainer";
-import store from "./redux/store";
+import "./App.css"
+import { Provider } from "react-redux"
+import CakeContainer from "./components/CakeContainer"
+import store from "./redux/store"
+import HooksCakeContainer from "./components/HooksCakeContainer"
+
 function App() {
   return (
     <Provider store={store}>
-      <CakeContainer></CakeContainer>;
+      <CakeContainer></CakeContainer>
+      <HooksCakeContainer></HooksCakeContainer>
     </Provider>
-  );
+  )
 }
 
-export default App;
+export default App
